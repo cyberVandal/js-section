@@ -1,0 +1,12 @@
+Domasna 2 
+
+Zadaca :
+
+- Na browser ispecatete gi iminjata na site users koi se naogjaat vo users.json file-ot. 
+Hints: 
+Kreirajte papka Domasna2. 
+Vo nea kreirajte package.json. 
+Potoa kreirajte index.js i mozhe da go iskoristite od cas users.json.
+Instalirajte gi lokalno modulite: http, url i fs. 
+Startuvajte go vashiot prv lokalen server i na https://localhost:3000/ da se ispechatat iminjata od users.json.
+ 

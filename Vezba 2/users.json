@@ -1,0 +1,18 @@
+[
+    {
+        "name": "Goran",
+        "pass": "123456"
+    },
+    {
+        "name": "Trajko",
+        "pass": "654321"
+    },
+    {
+        "name": "Petko",
+        "pass": "456123"
+    },
+    {
+        "name": "Stanko",
+        "pass": "321456"
+    }
+]
