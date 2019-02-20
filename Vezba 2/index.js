@@ -17,10 +17,11 @@ const fs = require('fs');
        for(let i = 0 ; i < parsedJSON.length; i++) {
            if(parsedJSON[i]) {
 
-               iminja = iminja + " " + parsedJSON[i].name;
+               iminja += " "+ parsedJSON[i].name;
                
            }
        }
+       // console.log(iminja);
 
        http.createServer((request, response) => {
         
@@ -45,5 +46,5 @@ const fs = require('fs');
 
 
      
-// // Kreirame Server 
+
  
