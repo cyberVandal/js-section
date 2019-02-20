@@ -28,7 +28,7 @@ const fs = require('fs');
         if(request.url === "/home") {
            
             response.writeHead(200,"OK");
-            response.write(iminja);
+            response.write("Iminjata od JSON file se : "+iminja);
             response.end();
         } else {
             response.writeHead(400,"OK");
