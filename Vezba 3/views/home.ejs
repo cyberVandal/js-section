@@ -12,11 +12,22 @@
     <div class="glaven">
         <div class="formHolder">
                     <h1> HOME PAGE </h1>
+                    <br>
                     <div class="btnHolder">
                             <button onclick="window.location='/login'">Log In</button> 
                     </div>
                     <div class="btnHolder">
                             <button onclick="window.location='/register'">Sign Up</button>
+
+                    </div>
+                    <div>
+                        <% for (let i = 0; i < users.length; i++) { %>
+
+                         
+                                <%= users[i].user %>
+                           
+                        
+                        <% } %>   
 
                     </div>
                  

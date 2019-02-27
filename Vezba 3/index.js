@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
-
+const user = require('./helpers/user');
+const body = require('body-parser');
 const port = 8080;
 
 
@@ -10,12 +11,28 @@ app.listen(port, () => { console.log("My first login/register app is running on 
 // Podesuvanje na view engine da bidne ejs 
 app.set("view engine", "ejs");
 
-app.use(express.static(__dirname + '/public'));
+//Body parser
+app.use(body.urlencoded({extended: true}))
 
-app.get('/home', (req,res)=>{
+//Za da moze css da se vcita
+//app.use(express.static(__dirname + '/public'));
 
 
-    res.render("home");
+var user1 = user.create("1","Goran","goran@gmail.com","123");
+var user2 = user.create("2","Blazenka", "blazenka@gmail.com", "456");
+
+var niza = [];
+
+niza.push(user1,user2);
+
+
+
+//RUTI
+
+app.get('/proba', (req,res)=>{
+
+
+    res.render("proba", {knigi: niza});
 
 
 })
@@ -23,6 +40,13 @@ app.get('/home', (req,res)=>{
 app.get('/register', (req,res)=>{
 
     res.render("register");
+
+
+})
+
+app.post('/register', (req,res)=>{
+
+
 
 
 })

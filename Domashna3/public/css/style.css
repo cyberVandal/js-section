@@ -1,0 +1,101 @@
+html, body {
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    /* Reminder: Da stavime font of Google web fonts */
+}
+
+
+
+.glaven{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.formHolder{
+
+    width: 300px;
+    min-height: 200px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 42px 1px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.form{
+        
+        padding: 25px;
+        
+}
+
+#submit{
+
+        width: 70px;
+        margin-left: auto;
+        margin-right: auto;
+        
+}
+#submit:hover{
+
+        cursor: pointer;
+}
+.btnHolder{
+
+        text-align: center;
+}
+
+input{
+
+    text-align: center;
+    padding: 5px;
+    border-radius: 6px;
+    border: none;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+    
+}
+
+input:hover{
+
+    box-shadow: 0px 0px 5px 1px rgba(179, 150, 25, 0.774);
+
+}
+.profileHolder{
+
+    width: 300px;
+   
+    border-radius: 20px;
+    box-shadow: 0px 0px 42px 1px rgba(0, 0, 0, 0.2);
+    
+    text-align: center;
+    
+}
+.button{
+
+    text-align: center;
+    padding: 5px;
+    border-radius: 6px;
+    border: none;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+    margin:15px;
+    
+}
+.button:hover{
+
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 1px rgba(179, 150, 25, 0.774);
+}
+h3{
+    margin: 15px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
